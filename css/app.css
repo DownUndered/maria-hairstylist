@@ -1,0 +1,46 @@
+  body, html {
+    height: 100%;
+  }
+
+  .parallax-landscape { 
+    /* The image used */
+    background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parrallax-curtain {
+    height: 50%;
+    background-color: rgba(255,255,255,0.4);
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .margin-y-auto {
+      margin-top: auto!important;
+      margin-bottom: auto!important;
+  }
+
+
+  .almost-white {
+    color: #FCFCFC;
+  }
+
+  .almost-black {
+    color: #141414;
+  }
+
+  .normal {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .heading {
+    font-family: 'Changa', sans-serif;
+  }
