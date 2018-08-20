@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Raleway" rel="stylesheet">
@@ -16,7 +17,7 @@
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hi, I'm Maria</p>
             <hr>
             <p class="normal">Your hairstylist. Let me create your new look...</p> 
@@ -26,7 +27,7 @@
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
             <hr>
             <p class="normal">
@@ -38,90 +39,137 @@
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My Services</p>
             <hr>
 
             <div class="grid-container">
-              <div class="grid-x grid-padding-x small-up-2 medium-up-3 standard-size">
+              <div class="grid-x grid-padding-x small-up-1 medium-up-3 standard-size">
                 <div class="cell">
                   <div class="card">
-                    <img src="./images/services/haircut.jpg">
-                    <div class="card-section">
-                    <h4 class="heading text-uppercase">Haircut</h4>
-                      <p>Starts from $60</p>
+                    <div class="front">
+                      <img src="./images/services/haircut.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Haircut</h4>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="card-section margin-vertical-2">
+                        <h4 class="heading text-uppercase">Haircut</h4>
+                        <p>Starts from $60</p>
+                        <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
                   <div class="card">
-                    <img src="./images/services/hair_colouring.jpg">
-                    <div class="card-section">
-                      <h4 class="heading text-uppercase">Colouring</h4>
-                      <p>Starts from $80</p>
+                    <div class="front">
+                      <img src="./images/services/hair_colouring.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Colouring</h4>
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Colouring</h4>
+                          <p>Starts from $60</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
                   <div class="card">
-                    <img src="./images/services/wedding_hairstyle.jpg">
-                    <div class="card-section">
-                      <h4 class="heading text-uppercase">Wedding Hairstyle and MakeUp</h4>
-                      <p>Hairstyle starts from $100 & MakeUp from $50</p>
+                    <div class="front">
+                      <img src="./images/services/wedding_hairstyle.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Wedding Hairstyle and MakeUp</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Wedding Hairstyle and MakeUp</h4>
+                          <p>Hairstyle from $100 & MakeUp from $50</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card">
+                    <div class="front">
+                      <img src="./images/services/waxing.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Waxing</h4>                        
+                      </div>                      
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Waxing</h4>
+                          <p>Up to $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card">
+                    <div class="front">
+                      <img src="./images/services/hair_treatment.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Hair Treatment</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Hair Treatment</h4>
+                          <p>Starts from $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card">
+                    <div class="front">
+                      <img src="./images/services/barber_shop.jpg">
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Barber Shop</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Barber Shop</h4>
+                          <p>Starts from $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="grid-x grid-padding-x small-up-2 medium-up-3 standard-size">
-              <div class="cell">
-                <div class="card">
-                  <img src="./images/services/waxing.jpg">
-                  <div class="card-section">
-                    <h4 class="heading text-uppercase">Waxing</h4>
-                    <p>Up to $30</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell">
-                <div class="card">
-                  <img src="./images/services/hair_treatment.jpg">
-                  <div class="card-section">
-                    <h4 class="heading text-uppercase">Hair Treatment</h4>
-                    <p>Starts from $30</p>
-                  </div>
-                </div>
-              </div>
-              <div class="cell">
-                <div class="card">
-                  <img src="./images/services/barber_shop.jpg">
-                  <div class="card-section">
-                    <h4 class="heading text-uppercase">Barber Shop</h4>
-                    <p>Starts from $30</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-             
+        
           </div>            
         </div>
       </div>
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My portfolio</p>
             <hr>
             <p class="normal">
               Here we put portfolio somehow...
-            </p> 
+            </p>             
+            <button class="text-uppercase button large shadow normal" data-open="galleryModal">See gallery</button>
           </div>            
         </div>
       </div>
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Complimentary Services</p>
             <hr>
             <p class="normal">
@@ -133,7 +181,7 @@
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Get in touch</p>
             <hr>
             <p class="normal">
@@ -146,11 +194,21 @@
       
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
-          <div class="cell">
+          <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <img class="width-25" src= "./images/logo/DownUndered_web_design_logo.svg" alt="Down Undered Software Logo">
           </div>
         </div>
       </div>
+
+
+      <!-- Gallery modal start -->
+      <div class="large reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+        <div class='embedsocial-album' data-ref="1695b49c67ad06ec4554d400f4b18138884c8709"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Gallery modal end -->
 
     
 
