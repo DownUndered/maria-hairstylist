@@ -11,94 +11,119 @@
       display: none; /* Safari and Chrome */
     }
 
-  .parallax-landscape { 
-    /* The image used */
-    background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .parrallax-curtain {
-    min-height: 50%;
-    background-color: rgba(255,255,255,0.5);
-    width: 100%;
-    font-size: 2.5rem;
-    margin: 0px!important;
-  }
-
-  .margin-y-auto {
-      margin-top: auto!important;
-      margin-bottom: auto!important;
-  }
-
-
-  .almost-white {
-    color: #FCFCFC;
-  }
-
-  .almost-black {
-    color: #141414;
-  }
-
-  .normal {
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .heading {
-    font-family: 'Changa', sans-serif;
-  }
-
-  .standard-size {
-    font-size: 1rem!important;
-  }
-
-  .shadow {
-    -webkit-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-    -moz-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-    box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-  }
-
-  /* 3d card rotation */
-  .card {
-    position: relative;
-    border: none;
-    background-color: rgba(0,0,0,0);
-    perspective: 1000px;  
-    transform-style:preserve-3d;  
-  }
-
-  .card:hover .front {
-    transform: rotateY(180deg);  
-  }
-
-  .card:hover .back {
-    transform: rotateY(360deg);    
-  }
-
-  .front, .back {
-    width: 100%;
-    height: 100%; 
-    background-color: rgb(254, 254, 254); 
-    border-radius: 3px; 
-    transition: 1s;
-    backface-visibility: hidden;
+    .no-js .top-bar {
+      display: none;
+    }
     
-  }
+    @media screen and (min-width: 40em) {
+      .no-js .top-bar {
+        display: block;
+      }
+    
+      .no-js .title-bar {
+        display: none;
+      }
+    }
 
-  .back {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: rotateY(180deg);
-  }
+    .parallax-landscape { 
+      /* The image used */
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+
+      /* Full height */
+      height: 100%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parrallax-curtain {
+      min-height: 50%;
+      background-color: rgba(255,255,255,0.5);
+      width: 100%;
+      font-size: 2.5rem;
+      margin: 0px!important;
+    }
+
+    .margin-y-auto {
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+
+
+    .almost-white {
+      color: #FCFCFC;
+    }
+
+    .almost-black {
+      color: #141414;
+    }
+
+    .normal {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .heading {
+      font-family: 'Changa', sans-serif;
+    }
+
+    .standard-size {
+      font-size: 1rem!important;
+    }
+
+    .shadow {
+      -webkit-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
+      -moz-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
+      box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
+    }
+
+    .transparent-background {
+      background-color: rgba(0,0,0,0)!important;
+    }
+
+    /* 3d card rotation */
+    .card {
+      position: relative;
+      border: none;
+      perspective: 1000px;  
+      transform-style:preserve-3d;  
+    }
+
+    .card:hover .front {
+      transform: rotateY(180deg);  
+    }
+
+    .card:hover .back {
+      transform: rotateY(360deg);    
+    }
+
+    .front, .back {
+      width: 100%;
+      height: 100%; 
+      background-color: rgb(254, 254, 254); 
+      border-radius: 3px; 
+      transition: 1s;
+      backface-visibility: hidden;
+      
+    }
+
+    .back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: rotateY(180deg);
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .card-section > h4 {
+      font-size: 1rem;
+    }
 
 
 
-  
+    

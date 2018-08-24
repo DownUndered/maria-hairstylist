@@ -13,7 +13,38 @@
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Raleway" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="home">
+
+    <!-- Navigation menu start -->
+    <div class="title-bar position-fixed-top" data-responsive-toggle="mainMenu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+      
+    <div class="top-bar position-fixed-top transparent-background" id="mainMenu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu transparent-background" data-dropdown-menu>
+          <li class="menu-text heading">MariaMAEND Hairstyling</li>
+          <li class="normal">
+            <a href="#">One</a>
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu transparent-background">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navigation menu end -->
 
       <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
@@ -25,7 +56,7 @@
         </div>
       </div>
 
-      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="about" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
@@ -37,7 +68,7 @@
         </div>
       </div>
 
-      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="services" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My Services</p>
@@ -46,7 +77,7 @@
             <div class="grid-container">
               <div class="grid-x grid-padding-x small-up-1 medium-up-3 standard-size">
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/haircut.jpg">
                       <div class="card-section">
@@ -57,13 +88,13 @@
                       <div class="card-section margin-vertical-2">
                         <h4 class="heading text-uppercase">Haircut</h4>
                         <p>Starts from $60</p>
-                        <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                        <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/hair_colouring.jpg">
                       <div class="card-section">
@@ -74,13 +105,13 @@
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Colouring</h4>
                           <p>Starts from $60</p>
-                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/wedding_hairstyle.jpg">
                       <div class="card-section">
@@ -91,13 +122,13 @@
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Wedding Hairstyle and MakeUp</h4>
                           <p>Hairstyle from $100 & MakeUp from $50</p>
-                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/waxing.jpg">
                       <div class="card-section">
@@ -108,13 +139,13 @@
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Waxing</h4>
                           <p>Up to $30</p>
-                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/hair_treatment.jpg">
                       <div class="card-section">
@@ -125,13 +156,13 @@
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Hair Treatment</h4>
                           <p>Starts from $30</p>
-                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
                   </div>
                 </div>
                 <div class="cell">
-                  <div class="card">
+                  <div class="card transparent-background">
                     <div class="front">
                       <img src="./images/services/barber_shop.jpg">
                       <div class="card-section">
@@ -142,7 +173,7 @@
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Barber Shop</h4>
                           <p>Starts from $30</p>
-                          <button class="text-uppercase button width-50 shadow normal" data-open="">Book</button>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
                   </div>
@@ -154,7 +185,7 @@
         </div>
       </div>
 
-      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="portfolio" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My portfolio</p>
@@ -167,7 +198,7 @@
         </div>
       </div>
 
-      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="extra" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Complimentary Services</p>
@@ -179,7 +210,7 @@
         </div>
       </div>
 
-      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="contact" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Get in touch</p>
@@ -199,6 +230,17 @@
           </div>
         </div>
       </div>
+
+      <!-- Booking modal start -->
+      <div class="reveal" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+        <h1>Awesome. I Have It.</h1>
+        <p class="lead">Your couch. It is mine.</p>
+        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Booking modal end -->
 
 
       <!-- Gallery modal start -->
