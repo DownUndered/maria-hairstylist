@@ -23,24 +23,18 @@
       
     <div class="top-bar position-fixed-top transparent-background" id="mainMenu">
       <div class="top-bar-left">
-        <ul class="dropdown menu transparent-background" data-dropdown-menu>
-          <li class="menu-text heading">MariaMAEND Hairstyling</li>
-          <li class="normal">
-            <a href="#">One</a>
-            <ul class="menu vertical">
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
+        <ul class="menu transparent-background" data-dropdown-menu>
+          <li class="menu-text heading lead font-wide"><a href="#home">MariaMAEND Hairstyling</a></li>        
         </ul>
       </div>
       <div class="top-bar-right">
-        <ul class="menu transparent-background">
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" class="button">Search</button></li>
+        <ul class="menu transparent-background text-uppercase" data-smooth-scroll data-magellan>
+          <li><a href="#about">About</a></li>            
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#extra">Compliments</a></li>
+          <li><a href="#contact">Contacts</a></li>
+          <li><button type="button" class="hollow button normal text-uppercase">Book</button></li>
         </ul>
       </div>
     </div>
@@ -56,7 +50,7 @@
         </div>
       </div>
 
-      <div id="about" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="about" data-magellan-target="about" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
@@ -68,7 +62,7 @@
         </div>
       </div>
 
-      <div id="services" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="services" data-magellan-target="services" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My Services</p>
@@ -185,7 +179,7 @@
         </div>
       </div>
 
-      <div id="portfolio" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="portfolio" data-magellan-target="portfolio" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My portfolio</p>
@@ -198,7 +192,7 @@
         </div>
       </div>
 
-      <div id="extra" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="extra" data-magellan-target="extra" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Complimentary Services</p>
@@ -210,7 +204,7 @@
         </div>
       </div>
 
-      <div id="contact" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div id="contact" data-magellan-target="contact" class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Get in touch</p>

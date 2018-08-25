@@ -73,12 +73,6 @@
       font-size: 1rem!important;
     }
 
-    .shadow {
-      -webkit-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-      -moz-box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-      box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.8);
-    }
-
     .transparent-background {
       background-color: rgba(0,0,0,0)!important;
     }
@@ -120,8 +114,8 @@
       font-size: 2rem;
     }
 
-    .card-section > h4 {
-      font-size: 1rem;
+    .card-section > h4, .card-section > p {
+      font-size: 0.8rem;
     }
 
 
