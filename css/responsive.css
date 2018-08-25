@@ -5,8 +5,10 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
- 
-    
+    p {
+      font-size:1rem!important;
+    }   
+
   
 }
 
@@ -17,6 +19,9 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    p {
+      font-size:1rem!important;
+    }
 
    
 
@@ -31,8 +36,29 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)  
   and (orientation: portrait) { 
-  
-  
+    p {
+      font-size:1rem!important;
+    }
+    .front  h4 {
+      font-size: 0.6rem;
+    }
+    
+    .back h4 {
+      font-size: 0.7rem;
+    }
+    .back p {
+      font-size: 0.6rem!important;
+      margin-bottom: 0.5rem!important;     
+    }
+    .back .card-section {
+      margin-top: 0px!important;
+      margin-bottom: 0px!important;
+      padding: 0.5rem!important;
+    }
+    .back .card-section .button {
+      width: 80%!important;
+    }
+ 
      
 
 }
@@ -43,8 +69,30 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-
+    p {
+      font-size:1rem!important;
+    }
+    .front  h4 {
+      font-size: 0.6rem;
+    }
     
+    .back h4 {
+      font-size: 0.7rem;
+    }
+    .back p {
+      font-size: 0.6rem!important;
+      margin-bottom: 0.5rem!important;     
+    }
+    .back .card-section {
+      margin-top: 0px!important;
+      margin-bottom: 0px!important;
+      padding: 0.5rem!important;
+    }
+    .back .card-section .button {
+      width: 80%!important;
+    }
+    
+  
 
 }
 
@@ -55,8 +103,10 @@
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
- 
- 
+    p {
+      font-size:1rem!important;
+    }
+
 
 }
 
@@ -67,7 +117,9 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {  
- 
+    p {
+      font-size:1rem!important;
+    }
     
     
  
@@ -79,8 +131,9 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-
-
+    p {
+      font-size:1rem!important;
+    }
 
 }
 

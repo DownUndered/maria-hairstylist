@@ -114,9 +114,16 @@
       font-size: 2rem;
     }
 
-    .card-section > h4, .card-section > p {
-      font-size: 0.8rem;
-    }
+   .front  h4 {
+     font-size: 1.2rem;
+   }
+   
+   .back h4 {
+     font-size: 1rem;
+   }
+   .back p {
+     font-size: 0.8rem;
+   }
 
 
 
