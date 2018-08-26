@@ -17,9 +17,15 @@
   <body id="home">
 
     <!-- Navigation menu start -->
-    <div class="title-bar position-fixed-top" data-responsive-toggle="mainMenu" data-hide-for="large">
-      <button class="menu-icon" type="button" data-toggle="mainMenu"></button>
+    <div class="title-bar position-fixed-top almost-white" data-responsive-toggle="mainMenu" data-hide-for="large">
+      <button class="menu-icon almost-white" type="button" data-toggle="mainMenu"></button>
       <div class="title-bar-title">Menu</div>
+      <div class="title-bar-right">
+        <ul class="menu align-right simple">
+          <li><a class="almost-white" href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li><a class="almost-white" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+        </ul>
+      </div>
     </div>
       
     <div class="top-bar position-fixed-top transparent-background" id="mainMenu">
@@ -43,10 +49,8 @@
     </div>
     <div class="top-bar position-fixed-bottom" id="mobileBottomMenu">
       <ul class="menu">
-        <li><a class="button" href=""><i class="fab fa-facebook-square fa-lg"></i></a></li>
         <li><button type="button" class="button normal text-uppercase" data-open="bookingModal">Book</button></li>
         <li><button type="button" class="button alert normal text-uppercase">Call</button></li>
-        <li><a class="button" href=""><i class="fab fa-instagram fa-lg"></i></a></li>
       </ul>
     </div>
     <!-- Navigation menu end -->
@@ -224,7 +228,9 @@
               Ready to get your new style or getting married? Just simlpy press a
               <strong>BOOK</strong> button or
               <strong>CALL</strong> to get a new look you desire!</p>
-            </p> 
+            </p>
+            <a id="makeCallButton" class="button shadow text-uppercase" href="tel:+61-431-435-940">Call</a>    
+            <p class="contactDetails normal">Innaloo, WA</p> 
           </div>            
         </div>
       </div>
@@ -239,7 +245,7 @@
       </div>
 
       <!-- Booking modal start -->
-      <div class="reveal" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+      <div class="reveal shadow" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -275,7 +281,7 @@
 
 
       <!-- Gallery modal start -->
-      <div class="large reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+      <div class="large reveal shadow" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
         <div class='embedsocial-album' data-ref="1695b49c67ad06ec4554d400f4b18138884c8709"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
