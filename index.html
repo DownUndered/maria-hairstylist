@@ -195,7 +195,7 @@
         </div>
       </div>
 
-      <div id="extra" data-magellan-target="extra" class="parallax-landscape grid-x grid-padding-x align-bottom">
+      <div class="parallax-landscape grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Complimentary Services</p>
@@ -230,12 +230,36 @@
 
       <!-- Booking modal start -->
       <div class="reveal" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
-        <h1>Awesome. I Have It.</h1>
-        <p class="lead">Your couch. It is mine.</p>
-        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
+        <form id="contact-form">
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-10 medium-offset-1 cell">
+                <label><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;Your name
+                  <input type="text" id="name" name="name" placeholder="Enter yor name">
+                </label>
+              </div>
+              <div class="medium-10 medium-offset-1 cell">
+                <label><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;To remake for services
+                  <input type="text" placeholder="Need to remake for services">
+                </label>
+              </div>
+              <div class="medium-10 medium-offset-1 cell">
+                <label>Desired date
+                  <input type="text" id="date" name="date" placeholder="DD/MM/YYYY">
+                </label>
+              </div>
+              <div class="medium-10 medium-offset-1 cell">
+                <label><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;04XX XXX XXX
+                  <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX">
+                </label>
+              </div>               
+            </div>
+          </div>
+        </form>
+        
       </div>
       <!-- Booking modal end -->
 
