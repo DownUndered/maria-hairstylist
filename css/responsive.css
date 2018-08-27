@@ -5,6 +5,9 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .parallax-main {       
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
+    }
     p {
       font-size:1rem!important;
     }   
@@ -270,6 +273,9 @@
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+    .parallax-main {       
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
+    }
     #bottomMobileMenu {
       display: none!important;
     }

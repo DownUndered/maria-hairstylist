@@ -245,33 +245,45 @@
       </div>
 
       <!-- Booking modal start -->
-      <div class="reveal shadow" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+      <div class="reveal shadow overflow-x-hidden" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
-        <form id="contact-form">
+        <form id="contact-form" class="almost-black">
           <div class="grid-container">
             <div class="grid-x grid-padding-x">
               <div class="medium-10 medium-offset-1 cell">
-                <label><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;Your name
+                <label class="almost-black"><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;Your name
                   <input type="text" id="name" name="name" placeholder="Enter yor name">
                 </label>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <label><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;To remake for services
-                  <input type="text" placeholder="Need to remake for services">
-                </label>
+                <fieldset class="fieldset">
+                  <legend>Desired services</legend>
+                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox"></label>
+                  <input id="colouring" type="checkbox"><label for="colouring">Colouring</label>
+                  <input id="wedding" type="checkbox"><label for="wedding">Wedding</label>
+                  <input id="waxing" type="checkbox"><label for="waxing">Waxing</label>
+                  <input id="hair_treatment" type="checkbox"><label for="hair_treatment">Hair&nbsp;Treatment</label>
+                  <input id="barber_shop" type="checkbox"><label for="barber_shop">Barber&nbsp;Shop</label>
+                </fieldset>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <label>Desired date
+                <label class="almost-black">Desired date
                   <input type="text" id="date" name="date" placeholder="DD/MM/YYYY">
                 </label>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <label><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;04XX XXX XXX
+                <label class="almost-black"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;04XX XXX XXX
                   <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX">
                 </label>
-              </div>               
+              </div> 
+              <div class="medium-10 medium-offset-1 cell">
+                <div class="button-group float-right">
+                  <input type="submit" class="text-uppercase button shadow normal" value="Submit">
+                  <button class="text-uppercase button alert shadow normal" data-close="bookingModal">Close</button>
+                </div>  
+              </div>
             </div>
           </div>
         </form>
