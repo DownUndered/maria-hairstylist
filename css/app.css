@@ -54,11 +54,11 @@
 
 
     .almost-white {
-      color: #FCFCFC;
+      color: #FCFCFC!important;
     }
 
     .almost-black {
-      color: #141414;
+      color: #141414!important;
     }
 
     .normal {
@@ -127,6 +127,9 @@
    .is-active {
       color: deepskyblue;    
       text-decoration-line: underline!important;
+   }
+   .zero-radius {
+      border-radius: 0px!important;
    }
 
 
