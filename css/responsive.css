@@ -34,6 +34,9 @@
     .button {
       font-size: 0.7rem!important;
     }
+    #duLogo {
+      width: 50%!important;
+    }
  
 
   
@@ -126,6 +129,9 @@
     }
     .button {
       font-size: 0.8rem!important;
+    }
+    #duLogo {
+      width: 50%!important;
     }
  
      
@@ -269,6 +275,9 @@
     }
     #extraBookButton {
       display: block!important;
+    }
+    #duLogo {
+      width: 50%!important;
     }
      
       
