@@ -147,7 +147,16 @@
    #serviceSelect .button {
      width: 6rem!important;
    }
-   
+   .reveal .top-bar {
+     background-color: #2ba6cb;
+     margin-bottom: 0.5rem; 
+   }
+   .reveal .h4 {
+     padding-left: 0.5rem;
+   }
+   .reveal .close-button {
+     top: unset!important;
+   }
 
 
 
