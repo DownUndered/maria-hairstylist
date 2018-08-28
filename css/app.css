@@ -131,6 +131,19 @@
    .zero-radius {
       border-radius: 0px!important;
    }
+   .mobile-card-hint {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+   }
+   .img-wrapper {
+     background-color: black;
+   }
+   .under-layer {
+     opacity: 0.8!important;
+   }
 
 
 

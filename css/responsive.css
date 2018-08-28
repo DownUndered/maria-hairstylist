@@ -285,6 +285,10 @@
     #duLogo {
       width: 50%!important;
     }
+    .mobile-card-hint {
+      display: block!important;
+    }
+    
      
       
 }
@@ -301,6 +305,9 @@
     .top-bar .button {
       font-size: small!important;
     }
+    .mobile-card-hint {
+      display: block!important;
+    }
 
     
 }
@@ -314,7 +321,9 @@
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) { 
- 
+    .mobile-card-hint {
+      display: block!important;
+    }
    
 
 }
