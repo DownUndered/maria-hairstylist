@@ -261,11 +261,11 @@
               <div class="medium-10 medium-offset-1 cell">
                 <fieldset class="fieldset">
                   <legend>Desired services (optional)</legend>
-                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox" data-abide-ignore></label>
-                  <input id="colouring" type="checkbox"><label for="colouring" data-abide-ignore>Colouring</label>
-                  <input id="wedding" type="checkbox"><label for="wedding" data-abide-ignore>Wedding</label>
-                  <input id="waxing" type="checkbox"><label for="waxing" data-abide-ignore>Waxing</label>
-                  <input id="hair_treatment" type="checkbox" data-abide-ignore><label for="hair_treatment">Hair&nbsp;Treatment</label>
+                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox" name="haircut" data-abide-ignore></label>
+                  <input id="colouring" type="checkbox" name="colouring" data-abide-ignore><label for="colouring">Colouring</label>
+                  <input id="wedding" type="checkbox" name="wedding" data-abide-ignore><label for="wedding">Wedding</label>
+                  <input id="waxing" type="checkbox" name="waxing" data-abide-ignore><label for="waxing">Waxing</label>
+                  <input id="hair_treatment" type="checkbox" name="hair_treatment" data-abide-ignore><label for="hair_treatment">Hair&nbsp;Treatment</label>
                   <input id="barber_shop" type="checkbox" data-abide-ignore><label for="barber_shop">Barber&nbsp;Shop</label>
                 </fieldset>
               </div>
@@ -285,9 +285,14 @@
                   <textarea id="comment" name="comment" placeholder="Enter yor comments" data-abide-ignore></textarea>
                 </label>
               </div> 
+              <div class="medium-10 medium-offset-1 cell">
+                <label>
+                  <input type="hidden" placeholder="Not to enter">
+                </label>
+              </div> 
               <div class="medium-10 medium-offset-1 cell clearfix">
                 <div class="button-group float-right">
-                  <input type="submit" class="text-uppercase button shadow normal" value="Submit">
+                  <input id="sendform" type="submit" class="text-uppercase button shadow normal" value="Submit">
                   <button class="text-uppercase button alert shadow normal" data-close="bookingModal">Close</button>
                 </div>  
               </div>
