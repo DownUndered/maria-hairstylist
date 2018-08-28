@@ -157,6 +157,9 @@
    .reveal .close-button {
      top: unset!important;
    }
+   #firstSelectGroup {
+     margin-bottom: 0.5rem;
+   }
 
 
 
