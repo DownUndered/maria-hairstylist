@@ -40,6 +40,9 @@
     #duLogo {
       width: 50%!important;
     }
+    #contact .fa-lg {
+      font-size: 2.5rem;
+    }
  
 
   
@@ -90,6 +93,9 @@
     #services > .parrallax-curtain {
       margin-top: 2rem!important;
     }
+    #contact .fa-lg {
+      font-size: 2.5rem;
+    }
 
    
 
@@ -136,6 +142,9 @@
     #duLogo {
       width: 50%!important;
     }
+    #contact .fa-lg {
+      font-size: 2.5rem;
+    }
  
      
 
@@ -175,6 +184,9 @@
     .button {
       font-size: 0.8rem!important;
     }
+    #contact .fa-lg {
+      font-size: 2.5rem;
+    }
     
   
 
@@ -196,6 +208,9 @@
     .button {
       font-size: 0.8rem!important;
     }
+    #contact .fa-lg {
+      font-size: 2.5rem;
+    }
 
 }
 
@@ -214,6 +229,9 @@
     }
     .button {
       font-size: 0.8rem!important;
+    }
+    #contact .fa-lg {
+      font-size: 2.5rem;
     }
     
  

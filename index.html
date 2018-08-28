@@ -242,17 +242,16 @@
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Get in touch</p>
             <hr>
-            <div class="medium-10 cell float-center clearfix">
-              
+            <div class="medium-10 cell float-center clearfix">              
                 <a class="almost-black" href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
                 <a class="almost-black" href="#"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
-            <p class="normal">
+            <p class="normal almost-black">
               Ready to get your new style or getting married? Just simlpy press a
-              <strong>BOOK</strong> button or
+              <strong>BOOK</strong> or
               <strong>CALL</strong> to get a new look you desire!</p>
             </p>
-            <p class="contactDetails normal">Innaloo, WA</p> 
+            <p class="contactDetails almost-black normal">Innaloo, WA</p> 
           </div>            
         </div>
       </div>
@@ -281,14 +280,18 @@
                 </label>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <fieldset class="fieldset">
+                <fieldset id="serviceSelect" class="fieldset">
                   <legend>Desired services (optional)</legend>
-                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox" name="haircut" data-abide-ignore></label>
-                  <input id="colouring" type="checkbox" name="colouring" data-abide-ignore><label for="colouring">Colouring</label>
-                  <input id="wedding" type="checkbox" name="wedding" data-abide-ignore><label for="wedding">Wedding</label>
-                  <input id="waxing" type="checkbox" name="waxing" data-abide-ignore><label for="waxing">Waxing</label>
-                  <input id="hair_treatment" type="checkbox" name="hair_treatment" data-abide-ignore><label for="hair_treatment">Hair&nbsp;Treatment</label>
-                  <input id="barber_shop" type="checkbox" data-abide-ignore><label for="barber_shop">Barber&nbsp;Shop</label>
+                  <div class="button-group align-center">
+                    <label for="haircut" class="button normal shadow">Haircut<input class="hide" id="haircut" type="checkbox" name="haircut" data-abide-ignore></label>
+                    <label for="colouring" class="button normal shadow">Colouring<input class="hide" id="colouring" type="checkbox" name="colouring" data-abide-ignore></label>
+                    <label for="wedding" class="button normal shadow">Wedding<input class="hide" id="wedding" type="checkbox" name="wedding" data-abide-ignore></label>
+                  </div>
+                  <div class="button-group align-center">
+                    <label for="waxing" class="button normal shadow">Waxing<input class="hide" id="waxing" type="checkbox" name="waxing" data-abide-ignore></label>
+                    <label for="hair_treatment" class="button normal shadow">Treatment<input class="hide" id="hair_treatment" type="checkbox" name="hair_treatment" data-abide-ignore></label>
+                    <label for="barber_shop" class="button normal shadow">Barber<input class="hide" id="barber_shop" type="checkbox" data-abide-ignore></label>
+                  </div>
                 </fieldset>
               </div>
               <div class="medium-10 medium-offset-1 cell">

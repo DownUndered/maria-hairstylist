@@ -144,6 +144,10 @@
    .under-layer {
      opacity: 0.8!important;
    }
+   #serviceSelect .button {
+     width: 6rem!important;
+   }
+   
 
 
 
