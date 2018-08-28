@@ -249,33 +249,40 @@
         <button class="close-button" data-close aria-label="Close modal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
-        <form id="contact-form" class="almost-black">
+        <form id="contact-form" class="almost-black" data-abide novalidate>
           <div class="grid-container">
             <div class="grid-x grid-padding-x">
               <div class="medium-10 medium-offset-1 cell">
-                <label class="almost-black"><i class="fa fa-id-badge" aria-hidden="true"></i>&nbsp;Your name
-                  <input type="text" id="name" name="name" placeholder="Enter yor name">
+                <label class="almost-black"><i class="far fa-user fa-fw" aria-hidden="true"></i>&nbsp;Your name
+                  <input type="text" id="name" name="name" placeholder="Enter yor name" aria-errormessage="nameError" required>
+                  <span class="form-error" id="nameError">Please, enter your name</span>
                 </label>
               </div>
               <div class="medium-10 medium-offset-1 cell">
                 <fieldset class="fieldset">
-                  <legend>Desired services</legend>
-                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox"></label>
-                  <input id="colouring" type="checkbox"><label for="colouring">Colouring</label>
-                  <input id="wedding" type="checkbox"><label for="wedding">Wedding</label>
-                  <input id="waxing" type="checkbox"><label for="waxing">Waxing</label>
-                  <input id="hair_treatment" type="checkbox"><label for="hair_treatment">Hair&nbsp;Treatment</label>
-                  <input id="barber_shop" type="checkbox"><label for="barber_shop">Barber&nbsp;Shop</label>
+                  <legend>Desired services (optional)</legend>
+                  <label for="haircut" class="button">Haircut<input id="haircut" type="checkbox" data-abide-ignore></label>
+                  <input id="colouring" type="checkbox"><label for="colouring" data-abide-ignore>Colouring</label>
+                  <input id="wedding" type="checkbox"><label for="wedding" data-abide-ignore>Wedding</label>
+                  <input id="waxing" type="checkbox"><label for="waxing" data-abide-ignore>Waxing</label>
+                  <input id="hair_treatment" type="checkbox" data-abide-ignore><label for="hair_treatment">Hair&nbsp;Treatment</label>
+                  <input id="barber_shop" type="checkbox" data-abide-ignore><label for="barber_shop">Barber&nbsp;Shop</label>
                 </fieldset>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <label class="almost-black">Desired date
-                  <input type="text" id="date" name="date" placeholder="DD/MM/YYYY">
+                <label class="almost-black"><i class="far fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;Desired date (optional)
+                  <input type="text" id="date" name="date" placeholder="DD/MM/YYYY" data-abide-ignore>
                 </label>
               </div>
               <div class="medium-10 medium-offset-1 cell">
-                <label class="almost-black"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;04XX XXX XXX
-                  <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX">
+                <label class="almost-black"><i class="fas fa-mobile-alt fa-fw" aria-hidden="true"></i>&nbsp;04XX XXX XXX
+                  <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" aria-errormessage="phoneError" required>
+                  <span class="form-error" id="phoneError">Please, enter your phone</span>
+                </label>
+              </div>
+              <div class="medium-10 medium-offset-1 cell">
+                <label class="almost-black"><i class="far fa-comment fa-fw" aria-hidden="true"></i>&nbsp;Additional information (optional)
+                  <textarea id="comment" name="comment" placeholder="Enter yor comments" data-abide-ignore></textarea>
                 </label>
               </div> 
               <div class="medium-10 medium-offset-1 cell clearfix">
@@ -309,5 +316,6 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    
   </body>
 </html>
