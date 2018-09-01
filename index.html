@@ -55,8 +55,8 @@
       </div>
     </div>
     <!-- Navigation menu end -->
-      
-      <div class="parallax-main grid-x grid-padding-x align-bottom">
+      <!--Parallax for large screens only start-->
+      <div class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hi, I'm Maria</p>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div id="about" data-magellan-target="about" class="parallax-main grid-x grid-padding-x align-bottom">
+      <div id="about" data-magellan-target="about" class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div id="services" data-magellan-target="services" class="parallax-main grid-x grid-padding-x align-bottom">
+      <div id="services" data-magellan-target="services" class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My Services</p>
@@ -213,7 +213,7 @@
         </div>
       </div>
 
-      <div id="portfolio" data-magellan-target="portfolio" class="parallax-main grid-x grid-padding-x align-bottom">
+      <div id="portfolio" data-magellan-target="portfolio" class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">My portfolio</p>
@@ -226,7 +226,7 @@
         </div>
       </div>
 
-      <div class="parallax-main grid-x grid-padding-x align-bottom">
+      <div class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Complimentary Services</p>
@@ -238,7 +238,7 @@
         </div>
       </div>
 
-      <div id="contact" data-magellan-target="contact" class="parallax-main grid-x grid-padding-x align-bottom">
+      <div id="contact" data-magellan-target="contact" class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
             <p class="h1 heading text-capitalize">Get in touch</p>
@@ -257,13 +257,209 @@
       </div>
       
       
-      <div class="parallax-main grid-x grid-padding-x align-bottom">
+      <div class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
         <div class="parrallax-curtain almost-black text-center grid-x grid-padding-x align-middle">
           <div class="cell medium-10 large-8 medium-offset-1 large-offset-2">
-            <a href="http://www.downundered.com" target="_blank"><img id="duLogo" class="width-25" src= "./images/logo/DownUndered_web_design_logo.svg" alt="Down Undered Software Logo"></a>
+            <a href="http://www.downundered.com" target="_blank"><img class="width-25 duLogo" src= "./images/logo/DownUndered_web_design_logo.svg" alt="Down Undered Software Logo"></a>
           </div>
         </div>
       </div>
+      <!--Parallax for large screens only end-->
+
+      <!--Mobile simplified version start-->
+      <div class="mobile-wrapper hide-for-large">
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div id="mobileStart" class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">Hi, I'm Maria</p>
+            <hr class="width-75">
+            <p class="normal">Your hairstylist. Let me create your new look...</p> 
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
+            <hr class="width-75">
+            <p class="normal">
+              In my job I use only reliable brands and the most modern and advanced hair cutting techniques such as Toni and Guy and Vidal Sassoon...
+            </p> 
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">My Services</p>
+            <hr>
+
+            <div class="grid-container">
+              <div class="grid-x grid-padding-x small-up-1 medium-up-3 standard-size">
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/haircut.jpg">
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Haircut</h4>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div class="card-section margin-vertical-2">
+                        <h4 class="heading text-uppercase">Haircut</h4>
+                        <p>Starts from $60</p>
+                        <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/hair_colouring.jpg">                        
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Colouring</h4>
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Colouring</h4>
+                          <p>Starts from $60</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/wedding_hairstyle.jpg">
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Wedding Services</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Wedding Services</h4>
+                          <p>Hairstyle from $100 & MakeUp from $50</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/waxing.jpg">
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Waxing</h4>                        
+                      </div>                      
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Waxing</h4>
+                          <p>Up to $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/hair_treatment.jpg">
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Hair Treatment</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Hair Treatment</h4>
+                          <p>Starts from $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card transparent-background">
+                    <div class="front">
+                      <div class="img-wrapper">
+                        <img class="under-layer" src="./images/services/barber_shop.jpg">
+                      </div>
+                      <p class="almost-white mobile-card-hint normal text-uppercase hide-for-large">tap me</p>
+                      <div class="card-section">
+                        <h4 class="heading text-uppercase">Barber Shop</h4>                        
+                      </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-section margin-vertical-2">
+                          <h4 class="heading text-uppercase">Barber Shop</h4>
+                          <p>Starts from $30</p>
+                          <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">My portfolio</p>
+            <hr class="width-75">
+            <p class="normal">
+              Here we put portfolio somehow...
+            </p>             
+            <button class="text-uppercase button large shadow normal" data-open="galleryModal">See gallery</button>
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">Complimentary Services</p>
+            <hr class="width-75">
+            <p class="normal">
+              List of the extra services will be here
+            </p> 
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <p class="h1 heading text-capitalize">Get in touch</p>
+            <hr class="width-75">
+            <div class="medium-10 cell float-center clearfix">              
+                <a class="almost-black" href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
+                <a class="almost-black" href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <p class="normal almost-black">
+              Ready to get your new style or getting married? Just simlpy press a
+              <strong>BOOK</strong> or
+              <strong>CALL</strong> to get a new look you desire!</p>            
+            <p class="contactDetails almost-black normal">Innaloo, WA</p> 
+          </div>            
+        </div>
+        <div class="almost-black text-center grid-x grid-padding-x margin-bottom-3">
+          <div class="cell medium-10 medium-offset-1 base-layer">
+            <a href="http://www.downundered.com" target="_blank"><img class="width-25 duLogo" src= "./images/logo/DownUndered_web_design_logo.svg" alt="Down Undered Software Logo"></a>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!--Mobile simplified version end-->
 
       <!-- Booking modal start -->
       <div class="reveal shadow overflow-x-hidden padding-0 border-none" id="bookingModal" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">

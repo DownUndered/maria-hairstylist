@@ -24,6 +24,22 @@
         display: none;
       }
     }
+    .mobile-wrapper {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
+      height: 100%;      
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+    }
+    #mobileStart {
+      margin-top: 10rem;
+    }
+    .base-layer {
+      background-color: rgba(255,255,255,0.5);
+    }   
 
     .parallax-main { 
       /* The image used */
@@ -174,14 +190,14 @@
    }
 
    button:active {
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #c1c1c1;
-     outline: none;
+      -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+      box-shadow: inset 0px 0px 5px #c1c1c1;
+      outline: none;
   }
 
   #messageSent {
-    display: none;
+      display: none;
   }
 
  

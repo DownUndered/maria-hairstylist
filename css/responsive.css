@@ -37,7 +37,7 @@
     .button {
       font-size: 0.7rem!important;
     }
-    #duLogo {
+    .duLogo {
       width: 50%!important;
     }
     #contact .fa-lg {
@@ -139,7 +139,7 @@
     .button {
       font-size: 1rem!important;
     }
-    #duLogo {
+    .duLogo {
       width: 50%!important;
     }
     #contact .fa-lg {
@@ -300,7 +300,7 @@
     #extraBookButton {
       display: block!important;
     }
-    #duLogo {
+    .duLogo {
       width: 50%!important;
     }
     .mobile-card-hint {
