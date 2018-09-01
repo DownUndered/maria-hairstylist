@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Changa:600|Raleway" rel="stylesheet">
 
   </head>
-  <body id="home">
+  <body id="home" data-magellan-target="home">
 
     <!-- Navigation menu start -->
     <div class="title-bar position-fixed-top almost-white" data-responsive-toggle="mainMenu" data-hide-for="large">
@@ -36,6 +36,7 @@
       </div>
       <div class="top-bar-right">
         <ul class="menu transparent-background text-uppercase" data-magellan data-smooth-scroll>
+          <li><a href="#home">Home</a></li> 
           <li><a href="#about">About</a></li>            
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -286,14 +287,20 @@
                 <fieldset id="serviceSelect" class="fieldset">
                   <legend>Desired services (optional)</legend>
                   <div id="firstSelectGroup" class="button-group align-center">
-                    <label for="haircut" class="button normal shadow">Haircut<input class="hide" id="haircut" type="checkbox" name="haircut" data-abide-ignore></label>
-                    <label for="colouring" class="button normal shadow">Colouring<input class="hide" id="colouring" type="checkbox" name="colouring" data-abide-ignore></label>
-                    <label for="wedding" class="button normal shadow">Wedding<input class="hide" id="wedding" type="checkbox" name="wedding" data-abide-ignore></label>
+                    <input class="hide" id="haircut" type="checkbox" name="haircut" data-abide-ignore>
+                    <label for="haircut" class="button normal shadow">Haircut</label>
+                    <input class="hide" id="colouring" type="checkbox" name="colouring" data-abide-ignore>
+                    <label for="colouring" class="button normal shadow">Colouring</label>
+                    <input class="hide" id="wedding" type="checkbox" name="wedding" data-abide-ignore>
+                    <label for="wedding" class="button normal shadow">Wedding</label>
                   </div>
                   <div class="button-group align-center margin-0">
-                    <label for="waxing" class="button normal shadow">Waxing<input class="hide" id="waxing" type="checkbox" name="waxing" data-abide-ignore></label>
-                    <label for="hair_treatment" class="button normal shadow">Treatment<input class="hide" id="hair_treatment" type="checkbox" name="hair_treatment" data-abide-ignore></label>
-                    <label for="barber_shop" class="button normal shadow">Barber<input class="hide" id="barber_shop" type="checkbox" data-abide-ignore></label>
+                    <input class="hide" id="waxing" type="checkbox" name="waxing" data-abide-ignore>
+                    <label for="waxing" class="button normal shadow">Waxing</label>
+                    <input class="hide" id="hair_treatment" type="checkbox" name="hair_treatment" data-abide-ignore>
+                    <label for="hair_treatment" class="button normal shadow">Treatment</label>
+                    <input class="hide" id="barber_shop" type="checkbox" data-abide-ignore>
+                    <label for="barber_shop" class="button normal shadow">Barber</label>
                   </div>
                 </fieldset>
               </div>

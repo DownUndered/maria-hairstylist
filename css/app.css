@@ -139,26 +139,37 @@
       font-size: 1.2rem;
    }
    .img-wrapper {
-     background-color: black;
+      background-color: black;
    }
    .under-layer {
-     opacity: 0.8!important;
+      opacity: 0.8!important;
    }
    #serviceSelect .button {
-     width: 6rem!important;
+      width: 6rem!important;      
    }
+
+
+   input[type=checkbox]:checked + label {
+      background: #87bdd8;
+      -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+      box-shadow: inset 0px 0px 5px #c1c1c1;
+      outline: none;
+   }
+
+
    .reveal .top-bar {
-     background-color: #2ba6cb;
-     margin-bottom: 0.5rem; 
-   }
+      background-color: #2ba6cb;
+      margin-bottom: 0.5rem; 
+    }
    .reveal .h4 {
-     padding-left: 0.5rem;
+      padding-left: 0.5rem;
    }
    .reveal .close-button {
-     top: unset!important;
+      top: unset!important;
    }
    #firstSelectGroup {
-     margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
    }
 
 
