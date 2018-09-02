@@ -27,7 +27,7 @@
     .mobile-wrapper {
       background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
       height: 100%;      
-      background-attachment: fixed;
+      /*background-attachment: fixed;*/
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
