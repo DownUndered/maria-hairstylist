@@ -28,7 +28,7 @@
         </ul>
       </div>
     </div>
-    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
      
       <ul class="vertical menu normal text-uppercase margin-top-3">
@@ -275,13 +275,14 @@
       <!--Parallax for large screens only end-->
 
       <!--Mobile simplified version start-->
-      <div id="bottomMobileMenu" class="top-bar position-fixed-bottom show-for-portrait padding-0" id="mobileBottomMenu">      
-        <div class="expanded button-group bordered margin-0">
-          <a class="button margin-0 border-none zero-radius normal almost-white text-uppercase" data-open="bookingModal">Book</a>
-          <a class="button margin-0 border-none zero-radius alert normal almost-white text-uppercase" href="tel:+61-431-435-940">Call</a>
-        </div>
-      </div>
+      
       <div class="mobile-wrapper hide-for-large off-canvas-content" data-off-canvas-content>
+        <div id="bottomMobileMenu" class="top-bar position-fixed-bottom show-for-portrait padding-0" id="mobileBottomMenu">      
+          <div class="expanded button-group bordered margin-0">
+            <a class="button margin-0 border-none zero-radius normal almost-white text-uppercase" data-open="bookingModal">Book</a>
+            <a class="button margin-0 border-none zero-radius alert normal almost-white text-uppercase" href="tel:+61-431-435-940">Call</a>
+          </div>
+        </div>
         <div id="mobileBackground" class="almost-black text-center grid-x grid-padding-x align-bottom">
           <div id="mobileStart" class="cell padding-2">
             <p class="h1 heading text-capitalize">Hi, I'm Maria</p>
