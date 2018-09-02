@@ -5,9 +5,7 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    .parallax-main {       
-      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
-    }
+
     p {
       font-size:1rem!important;
     }   
@@ -35,7 +33,14 @@
       width: 80%!important;
     }
     .button {
+      font-size: 1rem!important;
+    }
+    #serviceSelect .button {
       font-size: 0.7rem!important;
+      width: 5rem!important; 
+    }
+    .card .normal {
+      font-size: 0.9rem!important;
     }
     .duLogo {
       width: 50%!important;
@@ -43,7 +48,9 @@
     #contact .fa-lg {
       font-size: 2.5rem;
     }
- 
+    #address {
+      font-size: 1.25rem!important;
+    } 
 
   
 }
@@ -55,6 +62,9 @@
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+    #mobileBackground {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }
     p {
       font-size:1rem!important;
     }
@@ -96,7 +106,12 @@
     #contact .fa-lg {
       font-size: 2.5rem;
     }
-
+    .card .normal {
+      font-size: 0.8rem!important;
+    }
+    #address {
+      font-size: 1.25rem!important;
+    }
    
 
   }
@@ -139,11 +154,20 @@
     .button {
       font-size: 1rem!important;
     }
+    #serviceSelect .button {
+      font-size: 0.7rem!important;
+    }
+    .card .normal {
+      font-size: 0.9rem!important;
+    }
     .duLogo {
       width: 50%!important;
     }
     #contact .fa-lg {
       font-size: 2.5rem;
+    }
+    #address {
+      font-size: 1.25rem!important;
     }
  
      
@@ -156,6 +180,9 @@
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
+    #mobileBackground {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }
     p {
       font-size:1rem!important;
     }
@@ -187,6 +214,12 @@
     #contact .fa-lg {
       font-size: 2.5rem;
     }
+    .card .normal {
+      font-size: 0.8rem!important;
+    }
+    #address {
+      font-size: 1.25rem!important;
+    }
     
   
 
@@ -205,11 +238,20 @@
     .h1 {
       font-size: 1.2rem!important;
     }
+    #serviceSelect .button {
+      font-size: 0.7rem!important;
+    }
     .button {
-      font-size: 0.8rem!important;
+      font-size: 1rem!important;
+    }
+    .card .normal {
+      font-size: 0.9rem!important;
     }
     #contact .fa-lg {
       font-size: 2.5rem;
+    }
+    #address {
+      font-size: 1.25rem!important;
     }
 
 }
@@ -227,11 +269,20 @@
     .h1 {
       font-size: 1.4rem!important;
     }
+    #serviceSelect .button {
+      font-size: 0.7rem!important;
+    }
     .button {
-      font-size: 0.8rem!important;
+      font-size: 1rem!important;
+    }
+    .card .normal {
+      font-size: 0.9rem!important;
     }
     #contact .fa-lg {
       font-size: 2.5rem;
+    }
+    #address {
+      font-size: 1.25rem!important;
     }
     
  
@@ -243,13 +294,26 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-    /* Colliding with desktops
-    p {
+    #mobileBackground {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }
+    .hide-for-large .card .normal {
+      font-size: 0.8rem!important;
+    } 
+  
+    .hide-for-large p {
       font-size:1rem!important;
     }
-    .h1 {
+    .hide-for-large .h1 {
       font-size: 1.2rem!important;
     }
+    .hide-for-large .button {
+      font-size: 1rem!important;
+    }
+    .hide-for-large .h2 {
+      font-size: 1.25rem!important;
+    }
+      /* Colliding with desktops
     }
     .front  h4 {
       font-size: 0.6rem;
@@ -270,11 +334,8 @@
     } 
     .back .card-section .button {
       width: 80%!important;
-    }
-  
-    .button {
-      font-size: 1rem!important;
-    }
+    }  
+   
     .card {
       width: 80%;
     }

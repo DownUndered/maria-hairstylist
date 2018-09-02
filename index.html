@@ -18,15 +18,27 @@
 
     <!-- Navigation menu start -->
     <div class="title-bar position-fixed-top almost-white" data-responsive-toggle="mainMenu" data-hide-for="large">
-      <button class="menu-icon almost-white" type="button" data-toggle="mainMenu"></button>
+      <button class="menu-icon almost-white" type="button" data-toggle="offCanvas"></button>
       <div class="title-bar-title">Menu</div>
       <div class="title-bar-right">
         <ul class="menu align-right simple">
           <li><a class="almost-white" href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-          <li><a class="almost-white" href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="almost-white" href="https://instagram.com/mariamaend" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
           <li><button id="extraBookButton" style="border-color: #FCFCFC;" type="button" class="hollow button small normal show-for-landscape almost-white text-uppercase" data-open="bookingModal">Book</button></li>
         </ul>
       </div>
+    </div>
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+     
+      <ul class="vertical menu normal text-uppercase margin-top-3">
+        <li><a href="#home"><i class="fas fa-home fa-fw"></i>&nbsp;Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About</a></li>
+        <li><a href="#services"><i class="fas fa-cut fa-fw"></i>&nbsp;Services</a></li>
+        <li><a href="#portfolio"><i class="fas fa-image fa-fw"></i>&nbsp;Portfolio</a></li>
+        <li><a href="#contact"><i class="fas fa-address-card fa-fw"></i>&nbsp;Contacts</a></li>
+        <li><button type="button" class="hollow button normal text-uppercase margin-left-1" data-open="bookingModal">Book</button></li>      
+      </ul>
     </div>
       
     <div class="top-bar position-fixed-top transparent-background" id="mainMenu">
@@ -44,17 +56,12 @@
           <!-- <li><a href="#extra">Compliments</a></li> -->
           <li><a href="#contact">Contacts</a></li>
           <li><a href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
+          <li><a href="https://instagram.com/mariamaend" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
           <li><button type="button" class="hollow button normal text-uppercase" data-open="bookingModal">Book</button></li>
         </ul>
       </div>
     </div>
-    <div id="bottomMobileMenu" class="top-bar position-fixed-bottom show-for-portrait padding-0" id="mobileBottomMenu">      
-      <div class="expanded button-group margin-0">
-        <a class="button margin-0 border-none zero-radius normal almost-white text-uppercase" data-open="bookingModal">Book</a>
-        <a class="button margin-0 border-none zero-radius alert normal almost-white text-uppercase" href="tel:+61-431-435-940">Call</a>
-      </div>
-    </div>
+    
     <!-- Navigation menu end -->
       <!--Parallax for large screens only start-->
       <div class="parallax-main show-for-large grid-x grid-padding-x align-bottom">
@@ -101,7 +108,7 @@
                     <div class="back">
                       <div class="card-section margin-vertical-2">
                         <h4 class="heading text-uppercase">Haircut</h4>
-                        <p>Starts from $60</p>
+                        <p>from &#36;60</p>
                         <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                       </div>
                     </div>
@@ -121,7 +128,7 @@
                     <div class="back">
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Colouring</h4>
-                          <p>Starts from $60</p>
+                          <p>from &#36;60</p>
                           <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
@@ -141,7 +148,7 @@
                     <div class="back">
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Wedding Services</h4>
-                          <p>Hairstyle from $100 & MakeUp from $50</p>
+                          <p>from &#36;100</p>
                           <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
@@ -161,7 +168,7 @@
                     <div class="back">
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Waxing</h4>
-                          <p>Up to $30</p>
+                          <p>Up to &#36;30</p>
                           <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
@@ -181,7 +188,7 @@
                     <div class="back">
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Hair Treatment</h4>
-                          <p>Starts from $30</p>
+                          <p>from &#36;30</p>
                           <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
@@ -201,7 +208,7 @@
                     <div class="back">
                         <div class="card-section margin-vertical-2">
                           <h4 class="heading text-uppercase">Barber Shop</h4>
-                          <p>Starts from $30</p>
+                          <p>from &#36;30</p>
                           <button class="text-uppercase button width-50 shadow normal" data-open="bookingModal">Book</button>
                         </div>
                     </div>
@@ -248,11 +255,11 @@
                 <a class="almost-black" href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
                 <a class="almost-black" href="#"><i class="fab fa-instagram fa-lg"></i></a>
             </div>
-            <p class="normal almost-black">
+            <p class="normal almost-black margin-vertical-1">
               Ready to get your new style or getting married? Just simlpy press a
               <strong>BOOK</strong> or
               <strong>CALL</strong> to get a new look you desire!</p>            
-            <p class="contactDetails almost-black normal">Innaloo, WA</p> 
+            <p class="contactDetails h2 almost-black normal">Innaloo, WA</p> 
           </div>            
         </div>
       </div>
@@ -268,7 +275,13 @@
       <!--Parallax for large screens only end-->
 
       <!--Mobile simplified version start-->
-      <div class="mobile-wrapper hide-for-large">
+      <div id="bottomMobileMenu" class="top-bar position-fixed-bottom show-for-portrait padding-0" id="mobileBottomMenu">      
+        <div class="expanded button-group bordered margin-0">
+          <a class="button margin-0 border-none zero-radius normal almost-white text-uppercase" data-open="bookingModal">Book</a>
+          <a class="button margin-0 border-none zero-radius alert normal almost-white text-uppercase" href="tel:+61-431-435-940">Call</a>
+        </div>
+      </div>
+      <div class="mobile-wrapper hide-for-large off-canvas-content" data-off-canvas-content>
         <div id="mobileBackground" class="almost-black text-center grid-x grid-padding-x align-bottom">
           <div id="mobileStart" class="cell padding-2">
             <p class="h1 heading text-capitalize">Hi, I'm Maria</p>
@@ -299,7 +312,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Haircut</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Starts from $60</p>
+                      <p class="normal almost-black text-uppercase">from &#36;60</p>
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button>
                     </div>              
                   </div>
@@ -311,7 +324,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Colouring</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Starts from $60</p>
+                      <p class="normal almost-black text-uppercase">from &#36;60</p>
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button>
                     </div>              
                   </div>
@@ -323,7 +336,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Wedding Services</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Hairs from $100 & MakeUp from $50</p>                  
+                      <p class="normal almost-black text-uppercase">from &#36;100</p>                  
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button>
                     </div>                 
                   </div>
@@ -335,7 +348,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Waxing</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Up to $30</p>
+                      <p class="normal almost-black text-uppercase">Up to &#36;30</p>
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button>
                     </div>
                   </div>
@@ -347,7 +360,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Hair Treatment</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Starts from $30</p>
+                      <p class="normal almost-black text-uppercase">from &#36;30</p>
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button>
                     </div>
                   </div>
@@ -359,7 +372,7 @@
                     </div>
                     <p class="h2 almost-white mobile-card-hint heading text-uppercase">Barber Shop</p>
                     <div class="card-section">
-                      <p class="normal almost-black text-uppercase">Starts from $30</p>
+                      <p class="normal almost-black text-uppercase">from &#36;30</p>
                       <button class="text-uppercase button width-75 shadow normal" data-open="bookingModal">Book</button> 
                     </div>
                   </div>
@@ -393,14 +406,14 @@
             <p class="h1 heading text-capitalize">Get in touch</p>
             <hr class="width-75">
             <div class="medium-10 cell float-center clearfix">              
-                <a class="almost-white" href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-2x fa-fw"></i></a>
-                <a class="almost-white" href="#"><i class="fab fa-instagram fa-2x fa-fw"></i></a>
+                <a class="almost-white" href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-3x fa-fw"></i></a>
+                <a class="almost-white" href="https://instagram.com/mariamaend" target="_blank"><i class="fab fa-instagram fa-3x fa-fw"></i></a>
             </div>
-            <p class="normal">
+            <p class="normal margin-vertical-1">
               Ready to get your new style or getting married? Just simlpy press a
               <strong>BOOK</strong> or
               <strong>CALL</strong> to get a new look you desire!</p>            
-            <p class="contactDetails normal">Innaloo, WA</p> 
+            <p id="address" class="contactDetails h2 normal">Innaloo, WA</p> 
           </div>            
         </div>
         <div class="almost-black light-grey text-center grid-x grid-padding-x margin-bottom-3">
