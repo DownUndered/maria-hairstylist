@@ -367,6 +367,12 @@
     .mobile-card-hint {
       display: block!important;
     }
+    .card .h2 {
+      font-size: 1.5rem!important;
+    }
+    .card p {
+      font-size: 1.2rem!important;
+    }
     
      
       
@@ -387,11 +393,55 @@
     .mobile-card-hint {
       display: block!important;
     }
-
+    .parallax-main, #desktopMenu {
+      display: none!important;
+    }
+    .mobile-wrapper {
+      display: block!important;
+    }
+    #mobileBackground {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }   
+    #topMobileMenu {
+      display: flex!important;
+    }
+    .card .h2 {
+      font-size: 1.5rem!important;
+    }
+    .card p {
+      font-size: 1.2rem!important;
+    }
     
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    .mobile-card-hint {
+      display: block!important;
+    }
+    .parallax-main, #desktopMenu {
+      display: none!important;
+    }
+    .mobile-wrapper {
+      display: block!important;
+    }
+    #topMobileMenu {
+      display: flex!important;
+    }  
+    .card .h2 {
+      font-size: 1.5rem!important;
+    }
+    .card p {
+      font-size: 1.2rem!important;
+    }
+
+}
 /* Landscape */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
@@ -400,10 +450,27 @@
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+    #mobileBackground {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }  
     .mobile-card-hint {
       display: block!important;
     }
-   
+    .parallax-main, #desktopMenu {
+      display: none!important;
+    }
+    .mobile-wrapper {
+      display: block!important;
+    }
+    #topMobileMenu {
+      display: flex!important;
+    }  
+    .card .h2 {
+      font-size: 1.5rem!important;
+    }
+    .card p {
+      font-size: 1.2rem!important;
+    }
 
 }
 

@@ -17,7 +17,7 @@
   <body id="home" data-magellan-target="home">
 
     <!-- Navigation menu start -->
-    <div class="title-bar position-fixed-top almost-white" data-responsive-toggle="mainMenu" data-hide-for="large">
+    <div id="topMobileMenu" class="title-bar position-fixed-top almost-white" data-responsive-toggle="mainMenu" data-hide-for="large">
       <button class="menu-icon almost-white" type="button" data-toggle="offCanvas"></button>
       <div class="title-bar-title">Menu</div>
       <div class="title-bar-right">
@@ -31,17 +31,16 @@
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
      
-      <ul class="vertical menu normal text-uppercase margin-top-3" data-smooth-scroll>
+      <ul class="vertical menu normal text-uppercase margin-top-3 padding-top-1" data-smooth-scroll>
         <li><a href="#home"><i class="fas fa-home fa-fw"></i>&nbsp;Home</a></li>
         <li><a href="#aboutMobile"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About</a></li>
         <li><a href="#servicesMobile"><i class="fas fa-cut fa-fw"></i>&nbsp;Services</a></li>
         <li><a href="#portfolioMobile"><i class="fas fa-image fa-fw"></i>&nbsp;Portfolio</a></li>
         <li><a href="#contactMobile"><i class="fas fa-address-card fa-fw"></i>&nbsp;Contacts</a></li>
-        <li><button type="button" class="hollow button normal text-uppercase margin-left-1" data-open="bookingModal">Book</button></li>      
       </ul>
     </div>
       
-    <div class="top-bar position-fixed-top transparent-background" id="mainMenu">
+    <div id="desktopMenu" class="top-bar position-fixed-top transparent-background show-for-large" id="mainMenu">
       <div class="top-bar-left">
         <ul class="menu transparent-background" data-dropdown-menu>
           <li class="menu-text heading lead font-wide"><a href="#home">MariaMAEND Hairstyling</a></li>        
@@ -304,7 +303,7 @@
             <hr class="width-75">
 
             <div class="grid-container">
-              <div class="grid-x grid-padding-x small-up-1 medium-up-2 standard-size">
+              <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3 standard-size">
                 <div class="cell">
                   <div class="card shadow float-center">
                     <div class="img-wrapper">

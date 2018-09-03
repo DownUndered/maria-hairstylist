@@ -24,6 +24,9 @@
         display: none;
       }
     }
+    #bottomMobileMenu {
+      width: 100%;
+    }
     #mobileBackground {
       background-image: url("../images/background/maria_maend_hairstyling_makeup_perth.JPG");
       height: 100vh;     
