@@ -31,12 +31,12 @@
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
       <!-- Your menu or Off-canvas content goes here -->
      
-      <ul class="vertical menu normal text-uppercase margin-top-3">
+      <ul class="vertical menu normal text-uppercase margin-top-3" data-smooth-scroll>
         <li><a href="#home"><i class="fas fa-home fa-fw"></i>&nbsp;Home</a></li>
-        <li><a href="#about"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About</a></li>
-        <li><a href="#services"><i class="fas fa-cut fa-fw"></i>&nbsp;Services</a></li>
-        <li><a href="#portfolio"><i class="fas fa-image fa-fw"></i>&nbsp;Portfolio</a></li>
-        <li><a href="#contact"><i class="fas fa-address-card fa-fw"></i>&nbsp;Contacts</a></li>
+        <li><a href="#aboutMobile"><i class="fas fa-info-circle fa-fw"></i>&nbsp;About</a></li>
+        <li><a href="#servicesMobile"><i class="fas fa-cut fa-fw"></i>&nbsp;Services</a></li>
+        <li><a href="#portfolioMobile"><i class="fas fa-image fa-fw"></i>&nbsp;Portfolio</a></li>
+        <li><a href="#contactMobile"><i class="fas fa-address-card fa-fw"></i>&nbsp;Contacts</a></li>
         <li><button type="button" class="hollow button normal text-uppercase margin-left-1" data-open="bookingModal">Book</button></li>      
       </ul>
     </div>
@@ -53,7 +53,6 @@
           <li><a href="#about">About</a></li>            
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <!-- <li><a href="#extra">Compliments</a></li> -->
           <li><a href="#contact">Contacts</a></li>
           <li><a href="https://facebook.com/hairstylistperth" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a></li>
           <li><a href="https://instagram.com/mariamaend" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
@@ -290,7 +289,7 @@
             <p class="normal">Your hairstylist. Let me create your new look...</p>
           </div>            
         </div>
-        <div class="almost-white light-blue shadow text-center grid-x grid-padding-x">
+        <div id="aboutMobile" class="almost-white light-blue shadow text-center grid-x grid-padding-x">
           <div class="cell padding-2">
             <p class="h1 heading text-capitalize">Hairstyle is my passion</p>
             <hr class="width-75">
@@ -299,13 +298,13 @@
             </p> 
           </div>            
         </div>
-        <div class="almost-black light-grey text-center grid-x grid-padding-x">
+        <div id="servicesMobile" class="almost-black light-grey text-center grid-x grid-padding-x">
           <div class="cell padding-2">
             <p class="h1 heading text-capitalize">My Services</p>
             <hr class="width-75">
 
             <div class="grid-container">
-              <div class="grid-x grid-padding-x small-up-1 medium-up-3 standard-size">
+              <div class="grid-x grid-padding-x small-up-1 medium-up-2 standard-size">
                 <div class="cell">
                   <div class="card shadow float-center">
                     <div class="img-wrapper">
@@ -383,7 +382,7 @@
         
           </div>            
         </div>
-        <div class="almost-white light-blue shadow text-center grid-x grid-padding-x">
+        <div id="portfolioMobile" class="almost-white light-blue shadow text-center grid-x grid-padding-x">
           <div class="cell padding-2">
             <p class="h1 heading text-capitalize">My portfolio</p>
             <hr class="width-75">
@@ -402,7 +401,7 @@
             </p> 
           </div>            
         </div>
-        <div class="almost-white light-blue shadow text-center grid-x grid-padding-x">
+        <div id="contactMobile" class="almost-white light-blue shadow text-center grid-x grid-padding-x">
           <div class="cell padding-2">
             <p class="h1 heading text-capitalize">Get in touch</p>
             <hr class="width-75">
