@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 // Form submission
 
-$(document).on("formvalid.zf.abide", function(ev,frm) {
-  
+$(document).ready(function () {
+
   
     $("#sendform").on("click", function (event) {
     
@@ -39,23 +39,16 @@ $(document).on("formvalid.zf.abide", function(ev,frm) {
         success: function () {
           console.log("Your form was successfully received!");
           // Show a success message here...
-          $('#contact-form').hide();
-          $('#messageSent').show();
-          setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
-          $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            $('#contact-form').show();  
-            $('#messageSent').hide();
-          });
           
         },
         error: function () {
           console.log("Failure. Try again.");
           // Show an error message here...
-          $('#contact-form').hide();
+          $('#contact-form').css("visibility", "hidden");
           $('#messageSent').show();
           setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
           $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            $('#contact-form').show();  
+            $('#contact-form').css("visibility", "visible"); 
             $('#messageSent').hide();
           });
           
