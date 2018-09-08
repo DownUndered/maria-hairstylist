@@ -45,12 +45,13 @@
     .duLogo {
       width: 50%!important;
     }
-    #contact .fa-lg {
-      font-size: 2.5rem;
-    }
-    #address {
+ 
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
     } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
+    }
 
   
 }
@@ -103,14 +104,15 @@
     #services > .parrallax-curtain {
       margin-top: 2rem!important;
     }
-    #contact .fa-lg {
-      font-size: 2.5rem;
-    }
+
     .card .normal {
       font-size: 0.8rem!important;
     }
-    #address {
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
+    } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
     }
    
 
@@ -163,11 +165,12 @@
     .duLogo {
       width: 50%!important;
     }
-    #contact .fa-lg {
-      font-size: 2.5rem;
-    }
-    #address {
+
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
+    } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
     }
     #mobileStart {
       min-height: 35%!important;
@@ -220,8 +223,11 @@
     .card .normal {
       font-size: 0.8rem!important;
     }
-    #address {
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
+    } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
     }
     
   
@@ -250,11 +256,12 @@
     .card .normal {
       font-size: 0.9rem!important;
     }
-    #contact .fa-lg {
-      font-size: 2.5rem;
-    }
-    #address {
+
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
+    } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
     }
 
 }
@@ -281,11 +288,12 @@
     .card .normal {
       font-size: 0.9rem!important;
     }
-    #contact .fa-lg {
-      font-size: 2.5rem;
-    }
-    #address {
+
+    #address, #contactMobile .h2 {
       font-size: 1.25rem!important;
+    } 
+    #contactMobile .h5 {
+      font-size: 0.8rem!important;
     }
     
  
