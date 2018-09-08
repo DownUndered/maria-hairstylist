@@ -24,9 +24,11 @@ $(document).ready(function(){
 
 // Form submission
 
-$(document).ready(function () {
+$(document).on("formvalid.zf.abide", function(ev,frm) {
   
-    $("#contact-form").submit(function (event) {
+  
+    $("#sendform").on("click", function (event) {
+    
       event.preventDefault();
       $.ajax({
         url: "https://www.enformed.io/qilsfyez",
@@ -37,6 +39,13 @@ $(document).ready(function () {
         success: function () {
           console.log("Your form was successfully received!");
           // Show a success message here...
+          $('#contact-form').hide();
+          $('#messageSent').show();
+          setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
+          $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
+            $('#contact-form').show();  
+            $('#messageSent').hide();
+          });
           
         },
         error: function () {
