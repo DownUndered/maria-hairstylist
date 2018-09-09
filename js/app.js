@@ -29,7 +29,7 @@ $(document).ready(function () {
   
     $("#sendform").on("click", function (event) {
     
-      //event.preventDefault();
+      event.preventDefault();
       $.ajax({
         url: "https://www.enformed.io/qilsfyez",
         method: "post",
@@ -44,6 +44,7 @@ $(document).ready(function () {
         error: function () {
           console.log("Failure. Try again.");
           // Show an error message here...
+          return false;
           $('#contact-form').css("visibility", "hidden");
           $('#messageSent').show();
           setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
