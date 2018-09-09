@@ -29,7 +29,7 @@ $(document).ready(function () {
   
     $("#sendform").on("click", function (event) {
     
-      event.preventDefault();
+      //event.preventDefault();
       $.ajax({
         url: "https://www.enformed.io/qilsfyez",
         method: "post",
