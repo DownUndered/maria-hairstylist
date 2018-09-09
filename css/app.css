@@ -233,3 +233,9 @@
  .card-section .cell .button, #portfolioMobile .button {
    border-color: #f8f8ff;
  }
+ .datepicker-close {
+  width: auto!important;
+  height: auto!important;
+  padding: 0.8rem!important;
+  margin-top: -0.6rem!important;
+ }

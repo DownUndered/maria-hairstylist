@@ -11,13 +11,13 @@ $(document).ready(function(){
     if ($.browser.device) {
         $('#date').attr('type', 'date');
     } else {
-        var date_input=$('input[name="date"]'); //our date input has the name "date"
-        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-        date_input.datepicker({
-            format: 'dd/mm/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
+        $('#date').fdatepicker({
+          format: 'dd/mm/yyyy',
+          disableDblClickSelection: true,
+          leftArrow:'<<',
+          rightArrow:'>>',
+          closeIcon:'X',
+          closeButton: true
         });
      }    
  });
