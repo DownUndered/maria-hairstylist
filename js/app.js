@@ -26,10 +26,13 @@ $(document).ready(function(){
 
 $(document).ready(function () {
 
-  
-    $("#sendform").on("click", function (event) {
     
-      event.preventDefault();
+    $("#contact-form").on("formvalid.zf.abide", function (event) {
+      //$("#contact-form").on("formvalid.zf.abide");
+      //event.preventDefault();
+      //var name = $("#name").val();
+      //var phone = $("#phone").val();
+      //if (!(name == '' || phone == '')) {
       $.ajax({
         url: "https://www.enformed.io/qilsfyez",
         method: "post",
@@ -39,23 +42,35 @@ $(document).ready(function () {
         success: function () {
           console.log("Your form was successfully received!");
           // Show a success message here...
+          //$('#contact-form').css("visibility", "hidden");
+          //$('#messageSent').show();
+          //setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
+          //$('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
+            //$('#contact-form').css("visibility", "visible"); 
+            //$('#messageSent').hide();
+          //});
           
         },
         error: function () {
           console.log("Failure. Try again.");
+          console.log(event.data);
+          event.preventDefault();
           // Show an error message here...
-          return false;
-          $('#contact-form').css("visibility", "hidden");
-          $('#messageSent').show();
-          setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
-          $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            $('#contact-form').css("visibility", "visible"); 
-            $('#messageSent').hide();
-          });
+          //$('#contact-form').css("visibility", "hidden");
+          //$('#messageSent').show();
+          //setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
+          //$('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
+            //$('#contact-form').css("visibility", "visible"); 
+            //$('#messageSent').hide();
+          //});
+         
           
        
         }
-      });
+      }); 
+    
+      //}
+
     });
 
   });
