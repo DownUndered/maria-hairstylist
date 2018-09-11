@@ -27,12 +27,14 @@ $(document).ready(function(){
 $(document).ready(function () {
 
     
-    $("#contact-form").on("formvalid.zf.abide", function (event,frm) {      
+    //$("#contact-form").on("formvalid.zf.abide", function (event,frm) { 
+      $("#contact-form").submit("formvalid.zf.abide", function (event,frm) { 
+        
       //$("#contact-form").on("formvalid.zf.abide");
       event.preventDefault();
-      //var name = $("#name").val();
-      //var phone = $("#phone").val();
-      //if (!(name == '' || phone == '')) {
+      var name = $("#name").val();
+      var phone = $("#phone").val();
+      if (!(name == '' || phone == '')) {
       $.ajax({
         url: "https://www.enformed.io/qilsfyez",
         method: "post",
@@ -53,21 +55,20 @@ $(document).ready(function () {
         },
         error: function () {
           console.log("Failure. Try again.");
-          //event.preventDefault();
           // Show an error message here...
-          //$('#contact-form').css("visibility", "hidden");
-          //$('#messageSent').show();
-          //setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
-          //$('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            //$('#contact-form').css("visibility", "visible"); 
-            //$('#messageSent').hide();
-          //});
+          $('#contact-form').css("visibility", "hidden");
+          $('#messageSent').show();
+          setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
+          $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
+            $('#contact-form').css("visibility", "visible"); 
+            $('#messageSent').hide();
+          });
          
           
        
         }
       }); 
-    
+    }
       //}
 
     });
