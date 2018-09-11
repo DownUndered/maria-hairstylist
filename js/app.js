@@ -29,7 +29,7 @@ $(document).ready(function () {
     
     $("#contact-form").on("formvalid.zf.abide", function (event,frm) {      
       //$("#contact-form").on("formvalid.zf.abide");
-      event.preventDefault();
+      //event.preventDefault();
       //var name = $("#name").val();
       //var phone = $("#phone").val();
       //if (!(name == '' || phone == '')) {
@@ -53,7 +53,7 @@ $(document).ready(function () {
         },
         error: function () {
           console.log("Failure. Try again.");
-          event.preventDefault();
+          //event.preventDefault();
           // Show an error message here...
           //$('#contact-form').css("visibility", "hidden");
           //$('#messageSent').show();
