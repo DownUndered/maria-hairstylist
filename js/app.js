@@ -25,55 +25,32 @@ $(document).ready(function(){
 // Form submission
 
 $(document).ready(function () {
-
-    
-    //$("#contact-form").on("formvalid.zf.abide", function (event,frm) { 
-      $("#contact-form").submit("formvalid.zf.abide", function (event,frm) { 
-        
-      //$("#contact-form").on("formvalid.zf.abide");
-      event.preventDefault();
-      var name = $("#name").val();
+   
+    $("#contact-form").submit("formvalid.zf.abide", function (event) {       
+      
+      var name = $("#name").val(); //additional validation to prevent form submission if invalid
       var phone = $("#phone").val();
-      if (!(name == '' || phone == '')) {
-      $.ajax({
-        url: "https://www.enformed.io/qilsfyez",
-        method: "post",
-        dataType: "json",
-        accepts: "application/json",
-        data: $("#contact-form").serialize(),
-        success: function () {
-          console.log("Your form was successfully received!");
-          // Show a success message here...
-          //$('#contact-form').css("visibility", "hidden");
-          //$('#messageSent').show();
-          //setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
-          //$('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            //$('#contact-form').css("visibility", "visible"); 
-            //$('#messageSent').hide();
-          //});
-          
-        },
-        error: function () {
-          console.log("Failure. Try again.");
-          // Show an error message here...
-          $('#contact-form').css("visibility", "hidden");
-          $('#messageSent').show();
-          setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
-          $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
-            $('#contact-form').css("visibility", "visible"); 
-            $('#messageSent').hide();
-          });
-         
-          
-       
-        }
-      }); 
-    }
-      //}
+      if (!(name == '' || phone == '')) { //check if required filled
+        $.ajax({
+          url: "https://www.enformed.io/qilsfyez",
+          method: "post",
+          dataType: "json",
+          accepts: "application/json",
+          data: $("#contact-form").serialize(),
+        }); 
+      
+        $('#contact-form').css("visibility", "hidden");
+        $('#messageSent').show();
+        setTimeout(function() { $('#bookingModal').foundation('close'); }, 2500);
+        $('#bookingModal').on('closed.zf.reveal', function () { // this is to refresh content if resending booking
+          $('#contact-form').css("visibility", "visible"); 
+          $('#messageSent').hide();
+        });
+        event.preventDefault();              
+      }      
+    });    
 
-    });
-
-  });
+});
 
 
 
