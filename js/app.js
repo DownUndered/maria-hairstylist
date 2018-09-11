@@ -29,7 +29,7 @@ $(document).ready(function () {
     
     $("#contact-form").on("formvalid.zf.abide", function (event,frm) {      
       //$("#contact-form").on("formvalid.zf.abide");
-      //event.preventDefault();
+      event.preventDefault();
       //var name = $("#name").val();
       //var phone = $("#phone").val();
       //if (!(name == '' || phone == '')) {
