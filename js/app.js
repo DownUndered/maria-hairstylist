@@ -27,7 +27,7 @@ $(document).ready(function(){
 $(document).ready(function () {
 
     
-    $("#contact-form").on("formvalid.zf.abide", function (event) {
+    $("#contact-form").on("formvalid.zf.abide", function (event,frm) {      
       //$("#contact-form").on("formvalid.zf.abide");
       //event.preventDefault();
       //var name = $("#name").val();
@@ -53,7 +53,6 @@ $(document).ready(function () {
         },
         error: function () {
           console.log("Failure. Try again.");
-          console.log(event.data);
           event.preventDefault();
           // Show an error message here...
           //$('#contact-form').css("visibility", "hidden");
