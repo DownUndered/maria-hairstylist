@@ -1,6 +1,6 @@
     body,
     html {
-      height: 100%;
+      height: 100vh;
     }
 
     html {
@@ -9,6 +9,7 @@
       overflow: -moz-scrollbars-none;
       /* Firefox */
     }
+
 
     html::-webkit-scrollbar {
       display: none;
@@ -53,34 +54,70 @@
     }
 
     .light-grey {
-      background-color: rgba(248, 248, 255, 0.7)
+      background-color: rgba(248, 248, 255, 0.7);
     }
 
-    .parallax-main {
+    .separator-center::after {
+      width: 15rem;
+  }
+    
+    .parallax-back {
       /* The image used */
-      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+      
 
       /* Full height */
-      height: 100%;
-
+      height: 75vh;
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
-
-    #offCanvas {
-      background-color: rgba(255, 255, 255, 0.9);
+    #parallaxLanding {
+      background-image: linear-gradient(to bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.3)),url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+      height: 100vh;
     }
 
-    .parrallax-curtain {
-      min-height: 50%;
-      background-color: rgba(255, 255, 255, 0.5);
+    #parallaxLanding > .parallax-front {
+      background: none;
+    }
+    #parallaxLanding .h1 {
+      font-size: 5rem;
+    }
+    #parallaxLanding .normal {
+      font-size: 2.5rem;
+    }
+    #downPointer {
+      position: absolute;
+      bottom: 2%;
+    }
+
+    .back-1 {
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+    }
+    .back-2 {      
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
+    }
+    .back-3 {      
+      background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_2.jpg");
+    }
+
+
+
+    .parallax-front {
+      background-color: rgba(255, 255, 255, 0.7);
       width: 100%;
       font-size: 2.5rem;
       margin: 0px !important;
+      min-height: 50vh;
+
     }
+
+   
+    #offCanvas {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
 
     .margin-y-auto {
       margin-top: auto !important;
