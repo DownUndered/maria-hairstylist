@@ -60,6 +60,9 @@
     .separator-center::after {
       width: 15rem;
   }
+    #extraServicesList .separator-center::after {
+      width: 5rem;
+    }
     
     .parallax-back {
       /* The image used */
@@ -74,7 +77,7 @@
       background-size: cover;
     }
     #parallaxLanding {
-      background-image: linear-gradient(to bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.3)),url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
+      background-image: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,0.3)),url("../images/background/maria_maend_hairstyling_makeup_perth_landscape.JPG");
       height: 100vh;
     }
 
