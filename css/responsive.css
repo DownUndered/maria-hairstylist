@@ -375,7 +375,7 @@
     .mobile-card-hint {
       display: block!important;
     }
-    .parallax-main, #desktopMenu {
+    .show-for-large, #desktopMenu {
       display: none!important;
     }
     .mobile-wrapper {
@@ -407,7 +407,7 @@
     .mobile-card-hint {
       display: block!important;
     }
-    .parallax-main, #desktopMenu {
+    .show-for-large, #desktopMenu {
       display: none!important;
     }
     .mobile-wrapper {
@@ -438,7 +438,7 @@
     .mobile-card-hint {
       display: block!important;
     }
-    .parallax-main, #desktopMenu {
+    .show-for-large, #desktopMenu {
       display: none!important;
     }
     .mobile-wrapper {
