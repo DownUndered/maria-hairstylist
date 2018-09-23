@@ -96,10 +96,14 @@
     }
 
     #downPointer {
+      display: none;
       position: absolute;
       bottom: 2%;
+      opacity: 0.8;
     }
-
+    .pop-up {
+      opacity: 0;
+    }
     .back-2 {
       background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
     }

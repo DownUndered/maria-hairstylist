@@ -1,5 +1,30 @@
 $(document).foundation();
 
+// Animation
+$(document).ready(function () {
+  $("#parallaxLanding").on("mousemove", function () {
+    $('#downPointer').fadeIn(1000);
+  });
+  $(window).scroll(function () {
+    $('#downPointer').fadeOut();
+    $('.pop-up').each(function (i) {
+
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* If the object is completely visible in the window, fade it it */
+      if (bottom_of_window >= bottom_of_object) {
+
+        $(this).animate({'opacity':'1'},500);
+
+      }
+
+    });
+  });
+
+
+});
+
 //  Datepicker 
 $(document).ready(function () {
 
