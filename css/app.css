@@ -101,9 +101,11 @@
       bottom: 2%;
       opacity: 0.8;
     }
+
     .pop-up {
       opacity: 0;
     }
+
     .back-2 {
       background-image: url("../images/background/maria_maend_hairstyling_makeup_perth_landscape_mobile.jpg");
     }
@@ -212,10 +214,45 @@
       font-size: 0.8rem;
     }
 
-    .is-active {
-      color: #87bdd8;
-      text-decoration-line: underline !important;
+    #desktopMenu .top-bar-right a {
+      position: relative;
+      display: inline-block;
+
+
     }
+
+    #desktopMenu .top-bar-right a:hover::after,
+    #desktopMenu .top-bar-right a:hover::before {
+      width: 100%;
+      left: 0;
+    }
+
+    #desktopMenu .top-bar-right a::after,
+    #desktopMenu .top-bar-right a::before {
+      content: '';
+      position: absolute;
+      top: calc(100%);
+      width: 0;
+      right: 0;
+      height: 3px;
+
+    }
+
+    #desktopMenu .top-bar-right a::before {
+      transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+      background: #87bdd8;
+    }
+
+    #desktopMenu .top-bar-right a::after {
+      transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+      background: #2196f3;
+    }
+
+    .is-active {
+      color: #87bdd8!important;
+    }
+
+
 
     .title-bar {
       background-color: rgba(10, 10, 10, 0.8);
