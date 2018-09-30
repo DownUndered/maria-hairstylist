@@ -6,7 +6,7 @@
     html {
       -ms-overflow-style: none;
       /* IE 10+ */
-      overflow: -moz-scrollbars-none;
+      /* overflow: -moz-scrollbars-none; Disabled as firefox disabling scroll ATM */
       /* Firefox */
     }
 
